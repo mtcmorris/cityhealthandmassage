@@ -1,0 +1,107 @@
+html, body, div, span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 22px; }
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+table, td, th {
+  vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+input, select {
+  vertical-align: middle; }
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+a {
+  color: #99aa55;
+  text-decoration: none; }
+  a:hover {
+    color: #889944; }
+
+body {
+  background-color: black;
+  color: white; }
+
+.wrapper {
+  margin: 100px auto;
+  width: 420px; }
+
+#content {
+  text-align: center; }
+  #content img {
+    margin-bottom: 20px; }
+  #content p {
+    margin-bottom: 50px; }
+
+footer {
+  color: #ddd;
+  font-size: 12px; }
+  footer address {
+    font-style: normal;
+    text-align: right; }
+  footer .contact, footer address {
+    width: 200px;
+    float: left; }
+  footer .contact {
+    margin-right: 20px; }

@@ -1,0 +1,9 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #99aa55;
+  text-decoration: none;
+  &:hover { color: #889944; }
+}

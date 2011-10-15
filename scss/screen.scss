@@ -1,0 +1,30 @@
+@import "reset";
+@import "typography";
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  margin: 100px auto;
+  width: 420px;
+}
+
+#content {
+  text-align: center;
+  img { margin-bottom: 20px; }
+  p { margin-bottom: 50px;}
+}
+
+footer {
+  color: #ddd;
+  font-size: 12px;
+  address { font-style: normal; text-align: right;}
+
+  .contact, address {
+    width: 200px;
+    float: left;
+  }
+  .contact { margin-right: 20px; }
+}
