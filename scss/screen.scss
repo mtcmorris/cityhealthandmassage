@@ -1,30 +1,123 @@
+$ch_orange: #e75d24;
+$ch_green: #28b080;
+
+@import "mixins";
 @import "reset";
 @import "typography";
+@import "layout";
 
 body {
-  background-color: black;
-  color: white;
+  background: #f7f7f7 url('/images/bg/white_carbon.png') repeat top left;
+  color: #333;
 }
 
 .wrapper {
-  margin: 100px auto;
-  width: 420px;
+  margin: 0px auto;
+  width: 900px;
 }
 
-#content {
-  text-align: center;
-  img { margin-bottom: 20px; }
-  p { margin-bottom: 50px;}
+#header {
+  border-bottom: 1px solid #555;
+  background-color: #f7f7f7;
+}
+header {
+  padding: 20px 0px;
+  position: relative;
+  h1#logo {
+    background: transparent url('/city-health-and-massage-logo.png') no-repeat top left;
+    height: 200px;
+    width: 344px;
+    text-indent: -999em;
+    overflow: hidden;
+  }
+
+  address {
+    font-style: normal;
+    text-align: right;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
 }
 
 footer {
-  color: #ddd;
+  color: #aaa;
   font-size: 12px;
-  address { font-style: normal; text-align: right;}
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-align: center;
+  a { color: #888; border-bottom: 1px dotted #888; }
+}
 
-  .contact, address {
-    width: 200px;
-    float: left;
+div.catch {
+  border-top: 1px solid #888;
+  font-family: 'Poly', serif;
+  padding: 20px 0px;
+  font-size: 32px;
+  line-height: 46px;
+  background: #333 url('/images/bg/tactile_noise.png') repeat top left;
+  color: #fff;
+  em { color: #e75d24; }
+  .wrapper div {
+    padding: 0px 40px;
   }
-  .contact { margin-right: 20px; }
+  @include box-shadow(0px, 3px, 3px, rgba(0, 0, 0, 0.8));
+}
+
+
+#main {
+  padding-top: 3em;
+  p { margin-bottom: 1.0em;   line-height: 23px; }
+}
+
+dl {
+  background-color: rgba(0,0,0, 0.1);
+  @include rounded(5px);
+  dt {
+    float: left;
+    padding: 8px 0px 8px 20px;
+  }
+  dd {
+    text-align: right;
+    display: block;
+    padding: 8px 20px 8px 0px;
+    border-bottom: 1px dotted #b2b2b2;
+    &:last-child { border-bottom: none;}
+  }
+}
+
+#testimonials {
+  ul li {
+    background-color: #fff;
+    @include rounded(2px);
+    border: 1px solid #ddd;
+    list-style-type: none;
+    img {
+      border-right: 1px solid rgba(0,0,0, 0.1);
+      @include rounded(2px);
+      float: left;
+      margin-right: 20px;
+    }
+    p {
+      padding-right: 40px;
+      margin-top: 1em;
+      font-style: italic;
+    }
+    overflow: auto;
+    clear: both;
+    margin-bottom: 1em;
+  }
+}
+
+.section {
+  margin-bottom: 4em;
+}
+
+#location {
+  iframe {
+    @include rounded(3px);
+    @include box-shadow(0px, 10px, 100px, rgba(0, 0, 0, 0.3));
+    margin-bottom: 0.5em;
+  }
+  a { float: right; }
 }

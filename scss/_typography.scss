@@ -3,7 +3,16 @@ body {
 }
 
 a {
-  color: #99aa55;
+  color: #069;
   text-decoration: none;
-  &:hover { color: #889944; }
+  &:hover { color: $ch_orange; }
 }
+
+
+h3 {
+  font-family: 'Poly', serif;
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 15px;
+}
+

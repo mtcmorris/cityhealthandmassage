@@ -1,0 +1,29 @@
+$col_width:     270px;
+$gutter:        40px;
+$num_cols:      3;
+
+@function col-width($count:1) {
+  @return ($count*($col_width+$gutter)) - $gutter;
+}
+
+@mixin col($count:1){
+  float: left;
+  margin-right:$gutter;
+  @if $count == $num_cols { margin-right:0; }
+  width: col-width($count);
+}
+
+@mixin prepend($count:1) {
+  margin-left: col-width($count) + $gutter;
+}
+
+@mixin col-classes(){
+  $cols:('one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine');
+  @for $index from 1 through $num_cols {
+    .#{nth($cols, $index)}{ @include col($index); }
+    .prepend-#{nth($cols, $index)}{ @include prepend($index); }
+  }
+  .last{ margin-right:0; }
+}
+
+@include col-classes();
