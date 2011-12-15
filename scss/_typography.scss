@@ -14,5 +14,10 @@ h3 {
   font-size: 22px;
   color: #111;
   margin-bottom: 15px;
+  text-shadow: 1px 1px 1px #fff;
 }
 
+p, dl, dd, address {
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}

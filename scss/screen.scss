@@ -67,7 +67,10 @@ div.catch {
   line-height: 46px;
   background: #333 url('/images/bg/tactile_noise.png') repeat top left;
   color: #fff;
-  em { color: #e75d24; }
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  em { color: #e75d24; font-style: normal; }
   .wrapper div {
     padding: 0px 40px;
   }

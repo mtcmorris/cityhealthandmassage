@@ -83,7 +83,12 @@ h3 {
   font-family: 'Poly', serif;
   font-size: 22px;
   color: #111;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 1px #fff; }
+
+p, dl, dd, address {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
 
 .one {
   float: left;
@@ -180,11 +185,15 @@ div.catch {
   line-height: 46px;
   background: #333333 url("/images/bg/tactile_noise.png") repeat top left;
   color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.8); }
   div.catch em {
-    color: #e75d24; }
+    color: #e75d24;
+    font-style: normal; }
   div.catch .wrapper div {
     padding: 0px 40px; }
 
