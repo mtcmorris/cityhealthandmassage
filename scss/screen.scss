@@ -126,6 +126,30 @@ dl {
   }
 }
 
+#gallery {
+  height: 364px;
+  img {
+    @include rounded(2px);
+    float: left;
+    width: 100%;
+  }
+  figure {
+    width: 560px;
+    position: absolute;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0,0,0, 0.6);
+    color: #eee;
+    font-size: 11px;
+    text-indent: 10px;
+    line-height: 20px;
+    width: 560px;
+  }
+  margin-bottom: 3em;
+}
+
 .section {
   margin-bottom: 4em;
 }

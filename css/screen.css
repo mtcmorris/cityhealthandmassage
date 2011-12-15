@@ -240,6 +240,28 @@ dl {
     margin-top: 1em;
     font-style: italic; }
 
+#gallery {
+  height: 364px;
+  margin-bottom: 3em; }
+  #gallery img {
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    float: left;
+    width: 100%; }
+  #gallery figure {
+    width: 560px;
+    position: absolute; }
+  #gallery figcaption {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #eee;
+    font-size: 11px;
+    text-indent: 10px;
+    line-height: 20px;
+    width: 560px; }
+
 .section {
   margin-bottom: 4em; }
 
