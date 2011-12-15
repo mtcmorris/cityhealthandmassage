@@ -27,3 +27,12 @@ $num_cols:      3;
 }
 
 @include col-classes();
+
+.clearfix:before, .clearfix:after{
+  content: "\0020";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after{ clear: both; }
+.clearfix{ zoom: 1; }

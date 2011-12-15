@@ -6,8 +6,16 @@ $ch_green: #28b080;
 @import "typography";
 @import "layout";
 
+html {
+  height: 100%;
+  background: url("/images/bamboo.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+
 body {
-  background: #f7f7f7 url('/images/bg/white_carbon.png') repeat top left;
+/*  background: #f7f7f7 url('/images/bg/white_carbon.png') repeat top left;*/
   color: #333;
 }
 
@@ -50,6 +58,8 @@ footer {
 }
 
 div.catch {
+  z-index: 2;
+  position: relative;
   border-top: 1px solid #888;
   font-family: 'Poly', serif;
   padding: 20px 0px;
@@ -66,9 +76,16 @@ div.catch {
 
 
 #main {
-  padding-top: 3em;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background-color: rgba(255,255,255,0.8);
+  padding: 3em 20px 0px;
+  width: 860px;
   p { margin-bottom: 1.0em;   line-height: 23px; }
+  .one { width: 260px; }
+  .two { width: 560px;}
 }
+
 
 dl {
   background-color: rgba(0,0,0, 0.1);
