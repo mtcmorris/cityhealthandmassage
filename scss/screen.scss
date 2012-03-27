@@ -15,7 +15,6 @@ html {
 }
 
 body {
-/*  background: #f7f7f7 url('/images/bg/white_carbon.png') repeat top left;*/
   color: #333;
 }
 
@@ -66,8 +65,9 @@ div.catch {
   border-top: 1px solid #888;
   font-family: 'Poly', serif;
   padding: 20px 0px;
-  font-size: 32px;
-  line-height: 46px;
+  font-size: 42px;
+  text-align: center;
+  line-height: 66px;
   background: #333 url('/images/bg/tactile_noise.png') repeat top left;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
@@ -84,7 +84,8 @@ div.catch {
 #main {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  background-color: rgba(255,255,255,0.8);
+  background: #fff;
+  background: rgba(255,255,255,0.8);
   padding: 3em 20px 0px;
   width: 860px;
   p { margin-bottom: 1.0em;   line-height: 23px; }
@@ -115,16 +116,13 @@ dl {
     @include rounded(2px);
     border: 1px solid #ddd;
     list-style-type: none;
-    img {
-      border-right: 1px solid rgba(0,0,0, 0.1);
-      @include rounded(2px);
-      float: left;
-      margin-right: 20px;
-    }
+    padding: 10px 20px;
     p {
-      padding-right: 40px;
       margin-top: 1em;
       font-style: italic;
+      &.author {
+        text-align: right;
+      }
     }
     overflow: auto;
     clear: both;
@@ -146,6 +144,7 @@ dl {
   figcaption {
     position: absolute;
     bottom: 0px;
+    background-color: #333;
     background-color: rgba(0,0,0, 0.6);
     color: #eee;
     font-size: 11px;

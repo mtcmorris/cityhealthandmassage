@@ -138,7 +138,6 @@ html {
   -moz-background-size: cover; }
 
 body {
-  /*  background: #f7f7f7 url('/images/bg/white_carbon.png') repeat top left;*/
   color: #333; }
 
 .wrapper {
@@ -183,8 +182,9 @@ div.catch {
   border-top: 1px solid #888;
   font-family: 'Poly', serif;
   padding: 20px 0px;
-  font-size: 32px;
-  line-height: 46px;
+  font-size: 42px;
+  text-align: center;
+  line-height: 66px;
   background: #333333 url("/images/bg/tactile_noise.png") repeat top left;
   color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
@@ -202,7 +202,8 @@ div.catch {
 #main {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
-  background-color: rgba(255, 255, 255, 0.8);
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
   padding: 3em 20px 0px;
   width: 860px; }
   #main p {
@@ -236,20 +237,15 @@ dl {
   -webkit-border-radius: 2px;
   border: 1px solid #ddd;
   list-style-type: none;
+  padding: 10px 20px;
   overflow: auto;
   clear: both;
   margin-bottom: 1em; }
-  #testimonials ul li img {
-    border-right: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    float: left;
-    margin-right: 20px; }
   #testimonials ul li p {
-    padding-right: 40px;
     margin-top: 1em;
     font-style: italic; }
+    #testimonials ul li p.author {
+      text-align: right; }
 
 #gallery {
   height: 364px;
@@ -266,6 +262,7 @@ dl {
   #gallery figcaption {
     position: absolute;
     bottom: 0px;
+    background-color: #333;
     background-color: rgba(0, 0, 0, 0.6);
     color: #eee;
     font-size: 11px;
