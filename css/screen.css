@@ -260,6 +260,7 @@ dl {
     width: 560px;
     position: absolute; }
   #gallery figcaption {
+    left: 0px;
     position: absolute;
     bottom: 0px;
     background-color: #333;

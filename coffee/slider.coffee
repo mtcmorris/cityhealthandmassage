@@ -44,7 +44,6 @@ class Loader
       next = currentSlide.next()
     else
       next = this.slides.first()
-    console.log next
     self.transition(currentSlide, next)
 
   transition: (current, target) ->

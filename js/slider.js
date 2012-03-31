@@ -76,7 +76,6 @@
       } else {
         next = this.slides.first();
       }
-      console.log(next);
       return self.transition(currentSlide, next);
     };
 
