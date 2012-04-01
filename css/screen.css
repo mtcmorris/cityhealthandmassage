@@ -86,9 +86,13 @@ h3 {
   margin-bottom: 15px;
   text-shadow: 1px 1px 1px #fff; }
 
-p, dl, dd, address {
+p, dl, dd, address, li {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
+
+small {
+  font-size: 0.9em;
+  color: #777; }
 
 .one {
   float: left;
@@ -211,6 +215,8 @@ div.catch {
     line-height: 23px; }
   #main .one {
     width: 260px; }
+    #main .one li {
+      margin-left: 2.0em; }
   #main .two {
     width: 560px; }
 

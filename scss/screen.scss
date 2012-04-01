@@ -89,7 +89,11 @@ div.catch {
   padding: 3em 20px 0px;
   width: 860px;
   p { margin-bottom: 1.0em;   line-height: 23px; }
-  .one { width: 260px; }
+  .one { width: 260px;
+    li {
+      margin-left: 2.0em;
+    }
+  }
   .two { width: 560px;}
 }
 

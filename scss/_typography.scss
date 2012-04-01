@@ -17,7 +17,12 @@ h3 {
   text-shadow: 1px 1px 1px #fff;
 }
 
-p, dl, dd, address {
+p, dl, dd, address, li {
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
+}
+
+small {
+  font-size: 0.9em;
+  color: #777;
 }
